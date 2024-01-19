@@ -1,0 +1,389 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(101, 35, 66, 0.15);
+}
+.contMain{
+    width: 100%;
+    height: auto;
+}
+
+/* Main title */
+.sectionMainTitle{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(101, 35, 66, 1);
+    padding: .5rem 0;
+    color: #fff;
+}
+    .mainTitle{
+        font-family: 'Rubik', sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+/* Section Main Information */
+.sectionMainInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2.5rem; */
+    padding-top: 2.5rem;
+}
+
+/* Bar Title */
+.contBarTitle{
+    width: 100%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 26px;
+    color: rgba(101, 35, 66, 1);
+    padding: .5rem 0;
+}
+
+/* Article Home */
+.articleHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+    .contVideoAH{
+        width: 40rem;
+    }
+        .videoArticleHome{
+            width: 100%;
+            border-radius: 10px;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
+        }
+    .contInfoAH{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+    }
+            .imgInfoAh{
+                width: 12rem;
+            }
+
+        .contTextInfoAH{
+            width: 35rem;
+            font-family: 'Roboto', sans-serif;
+        }
+            .titleInfoAH{
+                text-transform: uppercase;
+                text-align: center;
+                padding: .5rem 0;
+                font-size: 20px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+            }
+            .textInfoAH{
+                font-size: 18px;
+            }
+
+/* Article Side to Side */
+.contMainInfoSI{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+    .contInfoSI{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        font-family: 'Roboto', sans-serif;
+        padding: 2rem 0;
+    }
+        .imgSectionInfo{
+            width: 13rem;
+            height: 13rem;
+            user-select: none;
+        }
+
+        .titleSectionInfo{
+            text-transform: uppercase;
+            text-align: center;
+            padding: .5rem 0;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+        .textSectionInfo{
+            width: 30rem;
+            font-size: 18px;
+        }
+
+/* ARTICLE OBJECTIVE */
+.articleObjective{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+    .contInfoObjective{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+        .contTitleObjective{
+            width: 100%;
+            background-color: rgba(101, 35, 66, 1);
+            padding: .5rem 0;
+            color: #fff;
+        }
+            .titleObjective{
+                font-family: 'Rubik', sans-serif;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+        .contTextObjective{
+            background-color: rgba(101, 35, 66, 0.75);
+            color: #fff;
+            padding: .75rem 5rem;
+        }
+            .textObjective{
+                font-size: 18px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+    .listBackground{
+        width: 100%;
+        background: url(../../img/img-Red-de-Genero/igualdadFondo.jpg);
+        background-size: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        font-family: 'Roboto', sans-serif;
+    }
+        .contListBackground{
+            width: 100%;
+            height: 100% !important;
+            backdrop-filter: brightness(0.5) blur(5px);
+            -webkit-backdrop-filter: brightness(0.5) blur(7.5px);
+            color: #fff;
+        }
+            .contTitleListBackground{
+                background-color: rgba(101, 35, 66, .35);
+                padding: .5rem;
+                box-shadow: 0 10px 10px rgba(255, 255, 255, 0.2);
+                font-size: 23px;
+            }
+                .titleListBackground{
+                    font-weight: bold;
+                }
+
+            .listItemBackground{
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 2rem;
+                padding: 1rem 2rem;
+            }
+                .itemListBackground{
+                    width: 14rem;
+                    height: 18rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: .5rem;
+                    padding: 1rem .75rem;
+                    background-color: rgba(101, 35, 66, 0.25);
+                    border-radius: 15px;
+                    backdrop-filter: blur(15px);
+                    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+                    transition: 250ms ease;
+                    cursor: default;
+                    user-select: none;
+                }
+                .itemListBackground:hover{
+                    transform: scale(1.05);
+                    background-color: rgba(101, 35, 66, 1);
+                }
+                .itemListBackground:hover .imgItemBackground{
+                    filter: drop-shadow(0 0 3px #fff);
+                }
+                    .imgItemBackground{
+                        width: 110px;
+                        height: 110px;
+                        filter: drop-shadow(0 0 1.5px #fff);
+                        transition: 200ms ease;
+                    }
+                    .textItemBackground{
+                        font-size: 16px;
+                        font-family: 'Roboto', sans-serif;
+                    }
+
+.articleVision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding: 1.5rem 0;
+}
+    .contInfoVision{
+        width: 23.5rem;
+        height: 21rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .75rem;
+        text-align: center;
+        background-color: rgba(101, 35, 66, 0.1);
+        padding: 2rem 1.75rem;
+        border-radius: 15px;
+        transition: 300ms ease;
+        user-select: none;
+    }
+    .contInfoVision:hover{
+        background-color: rgba(101, 35, 66, 1);
+        color: #fff;
+    }
+    .contInfoVision:hover .titleVision{
+        color: #fff;
+    }
+        .contImageVision{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .imgVision{
+                width: 8rem;
+                filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+            }
+
+        .contTextVision{
+            width: 24rem;
+            padding: .25rem .5rem;
+        }
+            .titleVision{
+                font-size: 28px;
+                padding: .5rem 0;
+                font-family: 'Rubik', sans-serif;
+                font-weight: bold;
+                color: rgba(101, 35, 66, 1);
+                transition: 700ms ease;
+            }
+            .textVision{
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+            }
+
+
+@media screen and (max-width: 1340px){
+    .articleHome{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .listBackground{
+        background-size: 125%;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .listBackground{
+        background-size: 175%;
+        background-position: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sectionMainInfo{
+        padding-top: 1rem;
+    }
+    .articleHome{
+        padding: 0 1rem;
+    }
+        .contVideoAH{
+            width: 100%;
+        }
+    .contInfoAH{
+        background-color: rgba(101, 35, 66, 0.1);
+        padding: 1.5rem 0;
+        border-radius: 10px;
+    }
+    .contTextInfoAH{
+        width: 90%;
+        text-align: center;
+    }
+    .articleInfoSide{
+        padding: .75rem 1rem;
+    }
+        .contInfoSI{
+            flex-direction: column-reverse;
+            gap: 1rem;
+            background-color: rgba(101, 35, 66, 0.1);
+            padding: 1rem 0;
+            border-radius: 10px;
+        }
+        .contTextInfoSI{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .textSectionInfo{
+            width: 90%;
+            text-align: center;
+        }
+
+        .contTextObjective{
+            padding: .5rem .5rem;
+        }
+            .textObjective{
+                font-size: 14px;
+            }
+    
+    .contTitleListBackground{
+        background-color: rgba(101, 35, 66, 0.85);
+    }
+    .listBackground{
+        background-size: 300%;
+        background-position: 93.25% 1rem;
+    }
+        .listItemBackground{
+            gap: .55rem;
+        }
+            .itemListBackground{
+                height: 16.5rem;
+            }
+                .imgItemBackground{
+                    width: 90px;
+                    height: 90px;
+                }
+                .textItemBackground{
+                    font-size: 15px;
+                }
+
+    .articleVision{
+        gap: 1.5rem;
+    }
+        .contInfoVision{
+            width: auto;
+            height: auto;
+        }
+            .contTextVision{
+                width: 75vw;
+            }
+
+}
+
+.textInfoAH, .textSectionInfo, .textVision{
+    line-height: 1.65rem;
+}
+.textObjective, .textItemBackground{
+    line-height: 1.45rem;
+}

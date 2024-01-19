@@ -1,0 +1,332 @@
+/* COLORS
+    GUINDA:
+    color: #682444;
+    AZUL
+    color: #0151aa;
+
+*/
+
+.sectNewsMain{
+    width: 100%;
+    height: 8.5rem;
+    background-color: rgba(104, 36, 68, 0.68);
+}
+    .navNewsMain{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        transition: 250ms ease;
+    }
+    .navNewsMain::-webkit-scrollbar{
+        width: 100%;
+        height: 6px;
+    }
+    .navNewsMain::-webkit-scrollbar-thumb{
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 25px;
+    }
+    .navNewsMain::-webkit-scrollbar-thumb:hover{
+        background: rgba(255, 255, 255, 1);
+    }
+    .navNewsMain::-webkit-scrollbar-thumb:active{
+        background-color: rgba(255, 255, 255, 0.35);
+    }
+        .listNewsM{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+            padding: 0 2rem;
+        }
+            .titleNoItems{
+                color: #fff;
+                font-family: 'Rubik', sans-serif;
+                text-transform: uppercase;
+            }
+            .itemNewsM{
+                width: 21.5rem;
+                height: 6rem;
+                border-radius: 10px;
+                overflow: hidden;
+                background-color: #682444;
+                cursor: pointer;
+            }
+                .imgItemNM{
+                    width: 21.5rem;
+                    height: 6rem;
+                }
+
+/* SECCION PRESENTACIÓN CECYT 3 */
+.sectPresentation{
+    position: relative;
+    background: url(https://lh3.googleusercontent.com/p/AF1QipOcnL5N7JHKOeEzUqnW61v2gKcsrVo305_tdflE=s680-w680-h510);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #682444;
+    background-attachment: fixed;
+}
+    .contentPresentation{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        z-index: 10;
+        color: #fff;
+        text-align: center;
+        padding: 2rem 0;
+        font-family: 'Raleway', sans-serif;
+    }
+        .firstInfoCP{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            align-items: center;
+        }
+            .imgInfoCP{
+                width: 100px;
+                background-color: #fff;
+                border-radius: 50%;
+                filter: drop-shadow(0 0 2.5px #fff);
+            }
+            .titleInfoCP{
+                width: 50rem;
+                font-size: 2.5rem;
+                text-shadow: 0 0 5px #fff;
+            }
+
+        .secondInfoCP{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .textInfoCP{
+                font-size: 30px;
+                text-shadow: 0 0 2px #fff;
+            }
+
+    .elementOpaquePresentation{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 5;
+    }
+
+
+/* SECCION ACCESOS DIRECTOS */
+.sectEduLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #682444;
+    font-family: 'Roboto', sans-serif;
+    padding: .75rem 0;
+    color: #fff;
+    user-select: none;
+}
+    .navEduLinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .listEduLinks{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.5rem;
+        }
+            .itemListEL:hover{
+                background-color: rgba(255, 255, 255, 0.35);
+                border-radius: 10px;
+            }
+            .itemListEL{
+                width: 5rem;
+                height: 8rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                text-align: center;
+                padding: .25rem 1.5rem;
+                transition: 400ms ease;
+                cursor: pointer;
+            }
+                .imgListEL{
+                    width: 55px;
+                    height: 55px;
+                }
+                .textListEL{
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+
+/* SECCION SLIDER - EVENTOS INSITUCIONALES */
+
+    .artEventsSlider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000;
+        padding: 2rem 0;
+    }
+        .contArrowES{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .25rem;
+            border-radius: 50%;
+            background-color: #0151aa;
+            cursor: pointer;
+            user-select: none;
+        }
+            .arrowES{
+                position: relative;
+                right: .05rem;
+                width: 25px;
+            }
+            .arrowES-R{
+                right: 0;
+                left: .05rem;
+                transform: rotate(-180deg);
+            }
+
+.sectEventsSlider{
+    background-color: rgba(2, 107, 178, .20);
+    font-family: 'Roboto', sans-serif;
+    padding: .5rem 0;
+}
+    .contTitleES{
+        font-size: 20px;
+        text-align: center;
+        color: #0151aa;
+        padding: 1rem 0 0 0;
+    }
+        .titleES{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+    .artEventsSlider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        border: none;
+        scroll-behavior: smooth;
+    }
+        .navEventsSlider{
+            width: auto;
+            max-width: 85%;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            padding: 0 0 1rem 0;
+        }
+        .navEventsSlider::-webkit-scrollbar{
+            width: 100%;
+            height: 6px;
+            cursor: grab;
+        }
+        .navEventsSlider::-webkit-scrollbar-thumb{
+            background: #0151aa;
+            border-radius: 25px;
+        }
+            .listEventsSlider{
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+            }
+                .itemListES:hover{
+                    transform: scale(0.975);
+                    box-shadow: 0 0 5px #ffffff;
+                }
+                .itemListES{
+                    width: 12rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border-radius: 7.5px;
+                    overflow: hidden;
+                    transition: 350ms ease;
+                }
+                    .contImgItemListES{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                        .imgItemListES{
+                            width: 100%;
+                        }
+
+                    .contTextItemListES{
+                        width: 100%;
+                        background-color: #0151aa;
+                        text-align: center;
+                        color: #fff;
+                        padding: .2rem 0;
+                    }
+                        .textItemListES{
+                            font-size: 13px;
+                            text-transform: uppercase;
+                        }
+
+/* SECCION CARRERAS TÉCNICAS */
+.sectTechnicalCareers{
+    background-color: rgba(2, 107, 177, .05);
+    padding: 1.5rem 0;
+    font-family: 'Roboto', sans-serif;
+}
+    .contTitleTC{
+        text-align: center;
+        color: #0151aa;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .navTechnicalC{
+
+    }
+        .listTechnicalC{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 1.5rem;
+            padding: 2rem .5rem;
+        }
+            .itemListTC:hover{
+                background-color: #0151aa;
+                color: #fff;
+            }
+            .itemListTC{
+                width: 8.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+                transition: 450ms ease;
+                border-radius: 12.5px;
+                background-color: rgba(2, 108, 178, 0.05);
+            }
+                .imgItemListTC{
+                    width: 55px;
+                    height: 55px;
+                    filter: drop-shadow(0 0 2.5px #fff);
+                }
+                .textItemListTC{
+                    font-weight: bold;
+                }
+
+img{
+    user-select: none;
+}

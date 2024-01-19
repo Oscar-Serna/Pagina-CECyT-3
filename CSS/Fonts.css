@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Raleway&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Lobster+Two&family=Oswald&family=Patua+One&family=Righteous&family=Roboto&family=Rubik&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Patrick+Hand&display=swap');
+.fonts{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Style Script', cursive;
+    font-family: 'Patua One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.colorsPage{
+    color: #7D0242;
+}

@@ -1,0 +1,258 @@
+.imgMenuBarLGH, .imgMenuBarC3H, .titleLogoC3-RES, .sectMenuC3H-RES{
+    display: none;
+}
+.imgMenuBarSGH{
+    display: none;
+    filter: brightness(0);
+}
+
+.imgMenuBarLGH, .imgMenuBarSGH, .imgMenuBarC3H{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 2560px) {
+
+}
+@media screen and (max-width: 1440px) {
+    @media screen and (max-width: 1357px) {
+        .sectMenuIndividual, .sectClassmatesH{
+            display: none;
+        }
+
+        @media screen and (max-width: 900px) {
+            /* MENÚ HEADER GOB - VERDE */
+        .mainGobH{
+            padding: .5rem 2rem .5rem 1.5rem;
+        }
+            .imgLogoGH{
+                width: 5rem;
+            }
+        .imgMenuBarLGH{
+            display: block;
+        }
+            .contLGH-RES-I{
+                height: 0;
+                opacity: 0;
+                visibility: hidden;
+                z-index: -1;
+            }
+            .contLGH-RES-A{
+                height: 17.5rem;
+                opacity: 1;
+                visibility: visible;
+                z-index: 10000;
+            }
+            .contLinksGH{
+                width: 7.5rem;
+                position: absolute;
+                top: 2.4rem;
+                right: 0;
+                background-color: #152D28;
+                padding: .5rem 2rem 1rem 2rem;
+                border-radius: 0 0 0 10px;
+                transition: 600ms ease;
+                overflow-y: hidden;
+            }
+                .listLinksGH{
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: .25rem;
+                }
+                    .itemListGH{
+                        position: relative;
+                        width: 7.5rem;
+                    }
+        }
+
+        @media screen and (max-width: 1230px) {
+        /* HEADER EDU - SEP */
+        .eduGobH{
+            position: relative;
+            padding: .75rem 2rem .75rem 1.5rem;
+        }
+            .imgLogoEH{
+                height: 30px;
+
+            }
+            .imgLogoIPN-EH{
+
+            }
+                .titleLogoEH{
+                    font-size: 10px;
+                }
+                .textLogoEH{
+                    font-size: 8px;
+                }
+        /* MENÚ HEADER EDU - SEP */
+        .imgMenuBarSGH{
+            display: block;
+        }
+            .contLEH-RES-I{
+                opacity: 0;
+                visibility: visible;
+                z-index: -1;
+                margin-right: -15rem;
+            }
+            .contLEH-RES-A{
+                opacity: 1;
+                visibility: visible;
+                z-index: 10000;
+                margin-right: 0;
+            }
+            .contLinksEH{
+                width: 7.5rem;
+                position: absolute;
+                right: 0;
+                top: 3.6rem;
+                background-color: rgb(255, 255, 255);
+                padding: 1.25rem  1.5rem;
+                border-radius: 0 0 10px 10px;
+                transition: 400ms ease;
+            }
+                .listLinksEH{
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+                    .itemListEH{
+                        border: none;
+                    }
+        }
+    /* MENU HEADER CECYT 3 */
+    .mC3H-Fixed{
+        left: unset;
+        transform: translateX(unset);
+        right: 0;
+    }
+        .sectMenuC3H-RES{
+            display: block;
+        }
+        .sectC3H{
+            justify-content: left;
+            gap: .25rem;
+            padding-left: .25rem;
+        }
+            .titleLogoC3-RES{
+                width: auto;
+                display: block;
+                color: #fff;
+                font-family: 'Roboto', sans-serif;
+                font-size: 12px;
+            }
+
+        .imgMenuBarC3H{
+            position: absolute;
+            display: block;
+            right: 2rem;
+        }
+        .contLinksC3H{
+            display: none;
+        }
+            .sectMenuC3H-RES-I{
+                min-height: 0;
+                max-height: 0;
+                opacity: 0;
+                visibility: 0;
+                z-index: 60;
+            }
+            .sectMenuC3H-RES-A{
+                min-height: auto;
+                max-height: 52.5vh;
+                opacity: 1;
+                visibility: 1;
+                z-index: 60;
+            }
+            .sectMenuC3H-RES{
+                width: 100vw;
+                position: absolute;
+                right: 0;
+                background-color: #682444;
+                box-shadow: 0 0 5px #fff;
+                border-radius: 0 0 10px 10px;
+                color: #fff;
+                font-family: 'Montserrat', sans-serif;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                transition: 500ms ease;
+            }
+                .navMenuC3H-RES{
+                    padding: 1rem 2.5rem;
+                }
+                    .listMenuC3H-RES{
+                        display: flex;
+                        flex-direction: column;
+                        gap: .75rem;
+                        list-style: none;
+                    }
+                        .itemMenuC3H-RES:hover{
+                            background-color: rgba(255, 255, 255, .5);
+                        }
+                        .itemMenuC3H-RES{
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            gap: .5rem;
+                            background-color: rgba(255, 255, 255, .25);
+                            padding: .5rem 1rem;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            transition: 300ms ease;
+                        }
+                            .imgItemMC3H-RES{
+                                max-width: 8px;
+                                max-height: 8px;
+                                filter: invert(1) opacity(.6);
+                            }
+                            .textMenuC3H-RES{
+                                font-weight: bold;
+                                font-size: 17px;
+                            }
+                            .imgArrowItemMC3H-RES{
+                                position: absolute;
+                                right: 1rem;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                width: 17px;
+                            }
+
+                        .itemSMC3H-RES-I{
+                            display: none;
+                        }
+                        .itemSMC3H-RES-A{
+                            display: block;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        .itemSubMenuC3H-RES{
+                            padding-left: 1.5rem;
+                            transition: 400ms ease;
+                        }
+                            .navItemSubMC3H-RES{
+                                border-radius: 5px;
+                            }
+                                .listItemSMC3H-RES{
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                    gap: .5rem;
+                                }
+                                    .itemListISMC3H-RES{
+                                        display: flex;
+                                        align-items: center;
+                                        background-color: rgba(255, 255, 255, 0.1);
+                                        gap: .5rem;
+                                        border-radius: 5px;
+                                        padding: .5rem 1rem;
+                                    }
+    }
+}
+@media screen and (max-width: 345px) {
+    .titleLogoEH{
+        font-size: 8px;
+    }
+    .textLogoEH{
+        font-size: 6px;
+    }
+}

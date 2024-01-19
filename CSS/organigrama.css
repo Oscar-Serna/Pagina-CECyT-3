@@ -1,0 +1,387 @@
+.sectionIM-I{
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+.sectionIM-A{
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000000;
+}
+
+.sectionIM-A > .articleInfoMember{
+    transform: scale(1);
+    margin-top: 0;
+}
+
+.sectionInfoMember{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 400ms ease;
+}
+    .articleInfoMember{
+        background-color: rgba(255, 255, 255, 0.75);
+        width: 30rem;
+        height: auto;
+        border-radius: 10px;
+        /* overflow: hidden; */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        transform: scale(.8);
+        margin-top: -10vh;
+        transition: 350ms ease;
+    }
+        .contTitleMember{
+            min-height: 3rem;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #682444;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            padding: .75rem 1rem;
+        }
+            .titleMember{
+                text-transform: uppercase;
+            }
+
+        .contInfoMember{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+            .imgMember{
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+                filter: drop-shadow(0 0 5px rgba(51, 10, 29, 0.25));
+                -webkit-filter: drop-shadow(0 0 5px rgba(51, 10, 29, 0.25));
+                user-select: none;
+                overflow: hidden;
+
+            }
+            .nameMember{
+                text-transform: uppercase;
+                margin-top: 1rem;
+                font-family: 'Rubik', sans-serif;
+                font-size: 21px;
+            }
+            .extMember{
+                font-family: 'Rubik', sans-serif;
+                margin-top: .25rem;
+                font-size: 18px;
+            }
+            .textMember{
+                margin-top: .75rem;
+                font-family: 'Roboto', sans-serif;
+            }
+
+        .contBtnCloseMember{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .5rem 0 1.25rem 0;
+        }
+            .btnCloseMember:hover{
+                background-color: #330a1d;
+                color: #fff;
+            }
+            .btnCloseMember:active{
+                background-color: #240715;
+                color: #fff;
+                transform: scale(1.025);
+                box-shadow: 0 0 5px #330a1d;
+            }
+            .btnCloseMember{
+                width: 10rem;
+                height: 2.5rem;
+                border: none;
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.5);
+                font-family: 'Righteous', cursive;
+                cursor: pointer;
+                transition: 350ms ease;
+            }
+
+.sectionOrganization{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 3rem;
+    font-family: 'Raleway', sans-serif;
+}
+    .articleOrgOne{
+        display: flex;
+        align-items: center;
+    }
+        .contMemberOrg, .contMemberOrgOne{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contMemberOrgOne{
+            width: 12.5rem;
+            height: auto;
+        }
+            .contInfoMemeberOrg:hover, .contInfoMemeberOrgOne:hover{
+                background-color: rgb(148, 78, 111);
+            }
+            .contInfoMemeberOrg:active, .contInfoMemeberOrgOne:active{
+                background-color: #330a1d;
+                transform: translateY(.25rem) scale(.95);
+                transition: 200ms ease;
+            }
+            .contInfoMemeberOrg, .contInfoMemeberOrgOne{
+                position: relative;
+                width: 12.5rem;
+                height: 4.5rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: .75rem 1rem;
+                box-shadow: 0 0 10px #682444;
+                background-color: #682444;
+                border-radius: 5px;
+                z-index: 20;
+                transition: 400ms ease;
+                user-select: none;
+            }
+            .contInfoMemeberOrgOne{
+                width: 12.5rem;
+                height: 3rem;
+            }
+
+            .contMO-R, .contMO-L{
+                align-items: center;
+            }
+                .imgMemberOrg{
+                    min-width: 40px;
+                    min-height: 40px;
+                    max-width: 40px;
+                    max-height: 40px;
+                    border-radius: 50%;
+                    filter: grayscale(0);
+                }
+            /* BOXES */
+            .boxMemberOrg-B, .boxMemberOrg-L, .boxMemberOrg-R, .boxMemberOrg-T, .boxMemeberOrg-Large-L, .boxMemeberOrg-Large-R{
+                position: absolute;
+                width: 10px;
+                height: 40px;
+                background-color: black;
+            }
+            .boxMemberOrg-B{
+                height: 33.4rem;
+                margin-top: 3.55rem;
+            }
+            .boxMemberOrg-L, .boxMemberOrg-R{
+                height: 7.5rem;
+                transform: rotate(90deg);
+            }
+            .boxMemberOrg-L{
+                margin-left: -22rem;
+            }
+            .boxMemberOrg-R{
+                margin-right: -22rem;
+            }
+            .boxMemberOrg-T{
+                height: 40px;
+                display: flex;
+                margin-top: -2.5rem;
+                justify-content: center;
+                z-index: 10;
+            }
+
+            .boxMemeberOrg-Large-L, .boxMemeberOrg-Large-R{
+                height: 20rem;
+                transform: rotate(90deg);
+            }
+            .boxMemeberOrg-Large-L{
+                margin-top: -12.2rem;
+                margin-right: -19.5rem;
+            }
+            .boxMemeberOrg-Large-R{
+                margin-top: -12.2rem;
+                margin-left: -19.5rem;
+            }
+
+    .articleOrgMul{
+        display: flex;
+        gap: 5rem;
+        padding: 0 2rem;
+    }
+    .artOrgMul-1{
+        gap: 15rem;
+    }
+    .artOrgMul-2{
+        padding-top: 2rem;
+    }
+        .contMulMembersOrg{
+            display: flex;
+            gap: 2.2rem;
+            align-items: center;
+            flex-direction: column;
+        }
+
+@media screen and (max-width: 900px) {
+
+
+    .sectionOrganization{
+        gap: 3rem 0;
+        overflow-x: scroll;
+    }
+
+    .articleOrgMul{
+        display: flex;
+        gap: 2rem 1.25rem;
+        padding: 1.5rem 2rem 0 2rem;
+    }
+
+    .articleOrgMul-RES{
+        gap: 2rem 3rem;
+    }
+
+    /* BOXES */
+    .boxMemberOrg-B, .boxMemberOrg-L, .boxMemberOrg-R, .boxMemberOrg-T, .boxMemeberOrg-Large-L, .boxMemeberOrg-Large-R{
+        position: absolute;
+        width: 10px;
+        height: 10vw;
+        background-color: black;
+    }
+    .boxMemberOrg-B{
+        height: 33.4rem;
+        margin-top: 3.55rem;
+    }
+    .boxMemberOrg-L, .boxMemberOrg-R{
+        height: 4rem;
+        transform: rotate(90deg);
+    }
+    .boxMemberOrg-L{
+        margin-left: -13rem;
+    }
+    .boxMemberOrg-R{
+        margin-left: -10rem;
+    }
+    .boxMemberOrg-T{
+        height: 40px;
+        display: flex;
+        margin-top: -2.5rem;
+        justify-content: center;
+        z-index: 10;
+    }
+
+    .boxMemeberOrg-Large-L, .boxMemeberOrg-Large-R{
+        height: 16.5rem;
+        transform: rotate(90deg);
+    }
+    .boxMemeberOrg-Large-L{
+        margin-top: -10.425rem;
+        margin-right: -30vw
+    }
+    .boxMemeberOrg-Large-R{
+        margin-top: -10.425rem;
+        margin-left: -30vw;
+    }
+
+    /* CARDS */
+    .contInfoMemeberOrg, .contInfoMemeberOrgOne{
+        position: relative;
+        max-width: 22.5vw;
+        min-height: 5rem;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: .75rem .5rem;
+        text-align: center !important;
+    }
+    .contInfoMemeberOrgOne{
+        box-shadow: 0 0 15px #330a1d;
+        min-height: 3.5rem;
+    }
+
+    .imgMemberOrg{
+        display: none;
+    }
+    .textMemberOrg{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 817px) {
+    .boxMemberOrg-L, .boxMemberOrg-R{
+        height: 10vw;
+        transform: rotate(90deg);
+    }
+    .boxMemberOrg-L{
+        margin-left: -13rem;
+    }
+    .boxMemberOrg-R{
+        margin-left: -10.5rem;
+    }
+}
+@media screen and (max-width: 516px) {
+    .boxMemberOrg-R{
+        height: 13vw;
+        margin-left: -12rem;
+    }
+    .boxMemberOrg-L{
+        margin-left: -10rem;
+    }
+}
+@media screen and (max-width: 410px) {
+    .boxMemberOrg-R{
+        height: 20vw;
+        margin-left: -14rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .articleInfoMember{
+        width: 90vw;
+    }
+
+    .boxMemeberOrg-Large-L, .boxMemeberOrg-Large-R{
+        height: 10.5rem;
+    }
+    .boxMemeberOrg-Large-L{
+        margin-top: -7.5rem;
+    }
+    .boxMemeberOrg-Large-R{
+        margin-top: -7.5rem;
+    }
+    .textMemberOrg{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .boxMemeberOrg-Large-L, .boxMemeberOrg-Large-R{
+        height: 8.15rem;
+    }
+    .boxMemeberOrg-Large-L{
+        margin-top: -6.25rem;
+    }
+    .boxMemeberOrg-Large-R{
+        margin-top: -6.25rem;
+    }
+    .textMemberOrg{
+        font-size: 13.5px;
+    }
+}

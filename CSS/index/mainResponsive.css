@@ -1,0 +1,165 @@
+@media screen and (max-width: 930px) {
+        .titleInfoCP{
+            width: auto;
+            font-size: 4vw;
+        }
+        .imgInfoCP{
+            position: relative;
+            right: -2.5rem;
+        }
+}
+@media screen and (max-width: 768px) {
+/* SECTION SLIDER */
+.artContentSlider{
+    height: 32.5vh !important;
+}
+    .contInfoLCS{
+        padding: 1rem ;
+    }
+        .mTLCS-I{
+            margin-right: 100rem;
+        }
+        .mainTitleLCS {
+            width: 72.5vw;
+            padding: .5rem 1rem;
+            border-radius: 10px;
+            font-size: 3vh;
+        }
+        .textInfoLCS {
+            width: 80vw;
+            padding: .5rem 1rem;
+            font-size: 2vh;
+            border-radius: 10px;
+            text-shadow: unset;
+        }
+
+/* SECCION EDU LINKS */
+.sectEduLinks{
+    padding: 0.75rem 1rem;
+}
+    .listEduLinks{
+        gap: 1rem ;
+    }
+        .itemListEL{
+            width: 4rem;
+            height: 7rem;
+        }
+            .imgListEL{
+                width: 50px;
+                height: 50px;
+            }
+            .textListEL{
+                font-size: 16px;
+            }
+
+/* SECTION PRESENTATION */
+.sectPresentation{
+    background-size: 150vh;
+}
+    .firstInfoCP{
+        flex-direction: column;
+    }
+        .titleInfoCP{
+            width: auto;
+            font-size: 5vw;
+            padding: 0 1.5rem;
+        }
+        .imgInfoCP{
+            position: sticky;
+            right: unset;
+        }
+        .textInfoCP{
+            font-size: 5.5vw;
+        }
+
+
+        .contArrowS{
+            width: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .75rem 0.25rem;
+        }
+            .arrowS{
+                width: 1.25rem;
+            }
+                .imgAS-R{
+                    
+                }
+                .imgAS-L{
+                    margin-left: -.25rem;
+                }
+            
+            .buttonShowContentS{
+                top: .5rem;
+                right: .5rem;
+                padding: .5rem .75rem;
+            }
+                .imgBtnSCS{
+                    width: 13px;
+                }
+                .textBtnSCS{
+                    font-size: 10px;
+                }
+            
+            .artProgressSlider {
+                max-width: 80vw;
+                padding: .5rem 1rem;
+                align-items: unset;
+            }
+                .contBallsPS{
+                    justify-content: unset;
+                    align-items: unset;
+                    justify-content: flex-start;
+                    overflow-x: scroll;
+                }
+                .contBallsPS::-webkit-scrollbar{
+                    width: 100%;
+                    height: 0;
+                    cursor: grab;
+                }
+                .contBallsPS::-webkit-scrollbar-thumb{
+                    background: rgba(0, 0, 0, .1);
+                }
+                    .textNumPS{
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                    .ballPS{
+                        min-width: 7px;
+                        min-height: 7px;
+                        max-width: 7.5px;
+                        max-height: 7.5px;
+                    }
+
+    .listNewsM{
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+        .itemNewsM{
+            width: 16rem;
+            height: 5rem;
+        }
+        .imgItemNM{
+            width: 16rem;
+            height: 5rem;
+        }
+
+/* SECCION SLIDER EVENTOS */
+.artEventsSlider{
+    padding: 2rem 1rem;
+}
+}
+@media screen and (max-width: 580px) {
+    .contArrowES{
+        display: none;
+    }
+}
+@media screen and (max-width: 375px) {
+    .artEventsSlider{
+        padding: 2rem 1rem;
+    }
+}
+@media screen and (max-width: 335px) {
+
+}

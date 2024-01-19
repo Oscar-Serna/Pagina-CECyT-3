@@ -1,0 +1,69 @@
+.sectIL-A{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10000;
+}
+.sectIL-I{
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+.sectionModal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff !important;
+    transition: 400ms ease;
+}
+    .navItemLinks{
+        width: 20rem;
+        height: auto;
+        padding: 1rem .5rem;
+        background-color: rgb(104, 36, 68);
+        border-radius: 10px;
+        overflow: hidden;
+        font-family: 'Rubik', sans-serif;
+    }
+        .titleLinks{
+            color: #fff;
+            padding: .5rem .75rem;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+            .listItemLinks{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 1.25rem .5rem 1.25rem;
+            }
+                .itemLinks:hover{
+                    background-color: rgba(255, 255, 255, .75);
+                    color: rgb(104, 36, 68);
+                }
+                .itemLinks:hover .textLinks{
+                    font-weight: bold;
+                }
+                .itemLinks{
+                    background-color: rgba(255, 255, 255, 0.15);
+                    padding: .75rem 1.25rem;
+                    border-radius: 7.5px;
+                    transition: 250ms ease;
+                }
+                    .aElementLinks{
+                        color: #fff;
+                        text-decoration: none;
+                    }
+
+@media screen and (max-width: 400px) {
+    .navItemLinks{
+        width: 85vw;
+    }
+}

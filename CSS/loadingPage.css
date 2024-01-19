@@ -1,0 +1,107 @@
+.loadingP-I{
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+.loadingP-A{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10000;
+}
+.loadingPage{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    transition: 800ms ease;
+    background: url(../img/logoC3-BN.png) #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+    .artLoadingP{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, .75);
+        backdrop-filter: brightness(.5);
+        -webkit-backdrop-filter: brightness(.5);
+    }
+        .contInfoLoadingP{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: .5vw;
+            text-align: center;
+            color: rgba(59, 59, 59, 0.9)
+        }
+            .secondTitleLP{
+                font-size: 1.6vw;
+                padding: 0 1rem;
+            }
+            .mainTitleLP{
+                font-size: 38px;
+            }
+
+        .contImgLoadingP{
+            position: relative;
+        }
+            .imgLP{
+                width: 6vw;
+                height: 6vw;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+
+    .contChargeLoadingP{
+        position: absolute;
+        border: .25vw solid rgba(255, 255, 255, 0);
+        border-top-color: #7D0242;
+        border-radius: 50%;
+        width: 6vw;
+        height: 6vw;
+        top: -.2vw;
+        left: -.2vw;
+        animation: loading 1s linear infinite;
+    }
+
+    @keyframes loading {
+        0%{
+            transform: rotate(0);
+        }
+
+        50%{
+            transform: rotate(100deg);
+        }
+
+        75%{
+            transform: rotate(150deg);
+        }
+
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+
+@media screen and (max-width: 1024px) {
+    .secondTitleLP{
+        font-size: 3.5vh;
+    }
+
+    .imgLP{
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .contChargeLoadingP{
+        width: 15vh;
+        height: 15vh;
+        top: -.48vh;
+        left: -.5vh;
+        border: .5vh solid rgba(255, 255, 255, 0);
+        border-top-color: #7D0242;
+    }
+}

@@ -1,0 +1,134 @@
+.sectionGestionEsc{
+    padding-top: 2rem;
+}
+    .articleInfoGE{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .listGestionEsc{
+            width: 80vw;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            list-style: none;
+            font-family: 'Rubik', sans-serif;
+        }
+            .itemGE:hover{
+                background: rgba(104, 36, 68, 0.2);
+                border: 2.75px dotted rgba(104, 36, 68, .5);
+                box-shadow: 0 0 4px rgba(104, 36, 68, 1);
+            }
+            .itemGE:active{
+                transform: scale(.95);
+                transition: 200ms ease;
+            }
+            .itemGE{
+                display: flex;
+                justify-content: center;
+                width: 12rem;
+                height: 8.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: .5rem;
+                padding: .5rem 1.5rem;
+                background: rgba(104, 36, 68, 0.1);
+                border-radius: 10px;
+                border: 2.75px dotted rgba(104, 36, 68, 0);
+                text-align: center;
+                transition: 400ms ease;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+            .itemGE:hover{
+                background: rgba(104, 36, 68, .9);
+                border: 2px dotted rgba(255, 255, 255, .65);
+                box-shadow: 0 0 4px rgba(104, 36, 68, 1);
+                color: #fff;
+            }
+            /* .itemGE{
+                color: #fff;
+                background: rgba(104, 36, 68, 1);
+            } */
+
+                        .imgItemGE{
+                            width: 45px;
+                            padding: .1rem 0;
+                            padding-bottom: .5rem;
+                            filter: drop-shadow(0 0 2.5px #fff);
+                        }
+                        .itemGE > p{
+                            font-weight: bold;
+                            font-size: 15px;
+                            line-height: 1.1rem;
+                        }
+
+
+.heroGestionEsc{
+    width: 100vw;
+    height: 13rem;
+    background: url(../img/imgGestion/mooc.jpg);
+    background-size: 100%;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center top -2rem;
+}
+
+/* SECTION ITEM LINKS */
+
+@media screen and (max-width: 1080px) {
+    /* RESPONSIVE IMAGE HERO */
+    @media screen and (max-width: 925px) {
+        .heroGestionEsc{
+            background-size: 125%;
+            background-position: center;
+        }
+
+        @media screen and (max-width: 720px) {
+            .heroGestionEsc{
+                background-size: 150%;
+            }
+        }
+        @media screen and (max-width: 545px) {
+            .heroGestionEsc{
+                background-size: 200%;
+                background-position: left -10rem center;
+            }
+        }
+        @media screen and (max-width: 420px) {
+            .heroGestionEsc{
+                background-size: 250%;
+                background-position: left -10rem center;
+            }
+        }
+        @media screen and (max-width: 320px) {
+            .heroGestionEsc{
+                background-size: 300%;
+                background-position: left -11rem center;
+            }
+        }
+    }
+
+    .listGestionEsc{
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+    .subListGE{
+        gap: .5rem;
+    }
+        .subItemGE{
+            width: 12.5rem;
+        }
+}
+
+@media screen and (max-width: 930px) {
+    .listGestionEsc{
+        width: 90vw;
+    }
+    .sectionGestionEsc{
+        padding: 1rem 0;
+    }
+}

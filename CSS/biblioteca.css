@@ -1,0 +1,35 @@
+@media screen and (max-width: 1130px){
+    .bibliotecaHero{
+        background-size: 125%;
+        background-position: center 5vh;
+    }
+    @media screen and (max-width: 930px){
+        .bibliotecaHero{
+            background-size: 135%;
+            background-position: -16vw 5vh;
+        }
+    }
+    @media screen and (max-width: 860px){
+        .bibliotecaHero{
+            height: 50vh;
+        }
+    }
+    @media screen and (max-width: 680px){
+        .bibliotecaHero{
+            background-size: 155%;
+            background-position: -34vw 5vh;
+        }
+    }
+    @media screen and (max-width: 580px){
+        .bibliotecaHero{
+            height: 27.5vh;
+            background-size: 170%;
+        }
+    }
+    @media screen and (max-width: 424px){
+        .bibliotecaHero{
+            background-size: 180%;
+            height: 27.5vh;
+        }
+    }
+}

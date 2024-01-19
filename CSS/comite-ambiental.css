@@ -1,0 +1,102 @@
+main{
+    padding: 0;
+}
+.sectionInfoComite{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1rem; */
+}
+    .articleLogoComite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 5rem;
+        left: 0;
+    }
+        .imgLogoComite{
+            width: 250px;
+            /* height: 125px; */
+            border-radius: 50%;
+        }
+
+    .articleCardsComite{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem 4rem;
+        padding: 1rem 2rem;
+        box-shadow: 0 0 5px rgba(59, 24, 41, 0.35);
+    }
+        .cardComite:hover{
+            transform: scale(1.025);
+            background-color: rgb(88, 29, 57);
+            box-shadow: 0 0 5px rgb(104, 36, 68);
+        }
+        .cardComite{
+            width: 13rem;
+            min-height: 21rem;
+            max-height: 21rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1.25rem;
+            border-radius: 10px;
+            padding: .75rem 1rem;
+            overflow: hidden;
+            background-color: #682444;
+            color: #fff;
+            text-align: center;
+            font-family: 'Rubik', sans-serif;
+            transition: 400ms ease;
+            cursor: default;
+        }
+            .imgComite{
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                user-select: none;
+            }
+            .titleComite{
+
+            }
+            .textComite{
+
+            }
+
+@media screen and (max-width: 1066px) {
+    .articleCardsComite{
+        gap: 1rem;
+    }
+
+    .articleLogoComite{
+        padding: 1rem 7.5rem;
+    }
+
+}
+@media screen and (max-width: 1050px){
+    .sectionInfoComite{
+        flex-direction: column;
+    }
+    
+    .articleCardsComite{
+        box-shadow: unset;
+    }
+
+    .articleLogoComite{
+        padding: .5rem 1.5rem;
+    }
+    .imgLogoComite{
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .articleCardsComite{
+        gap: .5rem;
+    }
+}

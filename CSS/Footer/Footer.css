@@ -1,0 +1,264 @@
+/* SECCION UBICACION */
+.sectLocation{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+    .contContactUs{
+        background-color: rgba(104, 36, 68, .95);
+        padding: 1rem 0 .75rem 0;
+    }
+        .navContactUs{
+
+        }
+            .contTextContactUs{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: .75rem;
+                opacity: .75;
+                text-align: center;
+            }
+                .titleContactUs{
+                    font-size: 13.5px;
+                    text-transform: uppercase;
+                }
+
+            .listContactUs{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                gap: 1.7rem;
+            }
+                .itemListCU:hover .imgListCU{
+                    filter: invert(1) opacity(1) drop-shadow(0 0 2px rgba(255, 255, 255, 0.45));
+                    -webkit-filter: invert(1) opacity(1) drop-shadow(0 0 2px rgba(255, 255, 255, 0.45));
+                }
+                .itemListCU{
+
+                }
+                    .imgListCU{
+                        filter: invert(1) opacity(.65);
+                        -webkit-filter: invert(1) opacity(.65);
+                        transform: scale(1.225);
+                        width: 20px;
+                        height: 20px;
+                        transition: 400ms ease;
+                    }
+                    .imgListCU-google, .imgListCU-instagram{
+                        width: 21.5px;
+                        height: 21.5px;
+                    }
+                    .imgListCU-tiktok{
+                        width: 18.5px;
+                        height: 18.5px;
+                    }
+                    .imgListCU-telephone{
+                        width: 17px;
+                        height: 17px;
+                    }
+
+    .artRadioIPN{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .75rem 1.5rem;
+        gap: 3rem;
+        flex-wrap: wrap;
+        background-color: rgba(104, 36, 68, .2);
+        box-shadow: 0 0 5px #E1D3DA;
+        text-align: center;
+    }
+        .contTitleRadio{
+            color: #682444;
+        }
+            .titleRadio{
+                text-shadow: 2px 2px 1px rgba(104, 36, 68, 0.25);
+            }
+            .imgRadio{
+                width: 14rem;
+            }
+
+    .artLocation{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 2rem 3rem;
+        flex-wrap: wrap;
+        background-color: #682444;
+        padding: 3rem 1rem;
+    }
+        .contLocation{
+            width: 600px;
+        }
+            .titleLocation{
+                padding-bottom: .5rem;
+                font-size: 24px;
+                text-transform: uppercase;
+            }
+            .textLocation{
+                font-size: 14px;
+            }
+
+    .contFormContact{
+        width: 22.5rem;
+        padding: .75rem 1rem;
+    }
+        .formContact{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+            .titleFormContact{
+                text-transform: uppercase;
+                font-size: 24px;
+            }
+            .formContact > p{
+                font-size: 15px;
+                margin: 0;
+                padding: 1.25rem 0 .65rem 0;
+            }
+
+            .formContact > input:not(.btnSendFC), .formContact > textarea{
+                background-color: rgba(255, 255, 255, .85);
+                border: none;
+                padding: .75rem .5rem;
+                border-radius: 5px;
+                margin: 0;
+                color: #000;
+                font-size: 16px;
+            }
+            .messageFC{
+                height: 12.5rem;
+            }
+
+            .btnSendFC{
+                width: 75%;
+                transform: translateX(16.5%);
+                padding: .5rem .75rem;
+                font-size: 16px;
+                margin-top: 1rem;
+                border: none;
+                border-radius: 5px;
+                transition: 250ms ease;
+                cursor: pointer;
+                background-color: rgba(255, 255, 255, .85);
+                color: #682444;
+                font-weight: bold;
+            }
+            .btnSendFC:hover{
+                background-color: rgba(255, 255, 255, .75);
+                box-shadow: 0 0 5px #fff;
+            }
+            .btnSendFC:active{
+                transform: scale(.95) translateX(16.5%);
+            }
+
+
+.sectEduPub{
+    background-color: #333333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+    .artEduPub{
+        width: 77.5rem;
+    }
+        .contInfoEP{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+            line-height: 1.75rem;
+        }
+            .titleEP{
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+            .textEP{
+                font-size: 15px;
+            }
+
+        .contImgEP{
+            position: relative;
+        }
+            .imgEP{
+                width: 22rem;
+                margin-left: -.65rem;
+            }
+
+/* SECCION GOBIERNO */
+.sectGobF{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    background-color: #13322B;
+    color: #fff;
+    padding: 4rem 0;
+    font-family: 'Roboto', sans-serif;
+}
+    .contImgGobF{
+
+    }
+        .imgGobF{
+            width: 10rem;
+        }
+
+    .navGobF{
+
+    }
+        .listGobF{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5rem;
+            list-style: none;
+        }
+            .itemListGobF{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+                .titleItemGF{
+                    font-size: 22px;
+                    font-weight: lighter;
+                }
+                .textItemGF{
+                    width: 19rem;
+                }
+                    .listItemGobF{
+                        display: flex;
+                        flex-direction: column;
+                        gap: .35rem;
+                        list-style: none;
+                    }
+                        .itemListIGF{
+
+                        }
+                            .textItemLIGF:hover{
+                                opacity: .75;
+                            }
+                            .textItemLIGF{
+                                text-decoration: underline rgba(255, 255, 255, .65);
+                                transition: 250ms ease;
+                            }
+
+                .contImgItemListGF{
+
+                }
+                    .imgItemListGF:hover{
+                        opacity: .75;
+                    }
+                    .imgItemListGF{
+
+                        transition: 250ms ease;
+                    }
+

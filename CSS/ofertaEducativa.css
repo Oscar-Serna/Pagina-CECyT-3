@@ -1,0 +1,154 @@
+/* IMAGENES HERO FONDO CARRERAS */
+.articleCareer{
+        width: 100%;
+        height: 37.5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, .5);
+        color: #fff;
+        font-family: 'Rubik', sans-serif;
+        text-align: center;
+    }
+        .titleCareer{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 36px;
+            text-transform: uppercase;
+            cursor: default;
+        }
+
+.bgAeronautica{
+    background: url(../img/Views/Gestion-escolar/aeronautica.jpg);
+}
+.bgAutomotriz{
+    background: url(../img/Views/Gestion-escolar/automotriz.jpg);
+}
+.bgComputacion{
+    background: url(../img/Views/Gestion-escolar/computacion.jpg);
+}
+.bgControl{
+    background: url(../img/Views/Gestion-escolar/controlelectrico.jpeg);
+}
+.bgMAC{
+    background: url(../img/Views/Gestion-escolar/mac.jpg);
+}
+.bgDigitales{
+    background: url(../img/Views/Gestion-escolar/sistemas-digitales.jpg);
+}
+
+.bgAeronautica, .bgAutomotriz, .bgComputacion, .bgControl, .bgMAC, .bgDigitales{
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* MENU OFERTA EDUCATIVA CARRERAS */
+.menuEduOffer{
+    /* #682444 */
+    /* #0151aa */
+    background-color: #682444;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    /* overflow-x: scroll; */
+}
+        .listMenuEO{
+            width: auto;
+            display: flex;
+            justify-content: center;
+            height: 3rem;
+            list-style: none;
+        }
+            .itemListMEO:hover{
+                background-color: rgba(255, 255, 255, .25);
+            }
+            .itemListMEO{
+                width: auto;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 1rem;
+                transition: 350ms ease;
+                text-align: center;
+            }
+                .textItemListMEO{
+                    text-transform: uppercase;
+                    text-rendering: optimizeSpeed;
+                    font-size: 15px;
+                }
+
+        .itemActive{
+            background-color: rgba(255, 255, 255, .75);
+            color: #682444;
+        }
+        .itemActive:hover{
+            background-color: rgba(255, 255, 255, .25);
+            color: #fff;
+        }
+
+/* RESPONSIVE MENU */
+@media screen and (max-width: 864px) {
+    .listMenuEO{
+        justify-content: unset;
+        height: 4rem;
+    }
+        .itemListMEO{
+            padding: 0 2rem;
+        }
+}
+
+/* RESPONSIVE IMAGENES FONDO CARRERA */
+@media screen and (max-width: 825px) {
+    .articleCareer{
+        height: 15rem;
+    }
+
+    .bgControl{
+        background-size: 135%;
+    }
+
+    @media screen and (max-width: 450px) {
+        .bgAeronautica, .bgAutomotriz, .bgComputacion, .bgControl, .bgMAC, .bgDigitales{
+            background-size: 125%;
+        }
+
+        .bgAeronautica{
+            background-size: 135%;
+        }
+        .bgControl{
+            background-size: 150%;
+        }
+    }
+
+    @media screen and (max-width: 315px) {
+        .bgAeronautica, .bgAutomotriz, .bgComputacion, .bgControl, .bgMAC, .bgDigitales{
+            background-size: 135%;
+        }
+
+        .bgAeronautica{
+            background-size: 145%;
+        }
+        .bgControl{
+            background-size: 175%;
+        }
+    }
+}
+
+
+
+.menuEduOffer::-webkit-scrollbar{
+    height: 7.5px;
+    background-color: #682444;
+}
+.menuEduOffer::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+}
+.menuEduOffer::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 255, 255, 0.8);
+}
+.menuEduOffer::-webkit-scrollbar-thumb:active{
+    background-color: rgba(255, 255, 255, 0.25);
+}

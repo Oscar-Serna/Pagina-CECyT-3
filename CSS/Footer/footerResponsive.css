@@ -1,0 +1,92 @@
+@media screen and (max-width: 1300px) {
+    .artEduPub{
+        width: auto !important;
+        padding: 0 1rem;
+    }
+}
+@media screen and (max-width: 1122px) {
+
+    /* ARTICLE LOCATION */
+    .artLocation{
+        gap: 1rem;
+    }
+    @media screen and (max-width: 1002px) {
+        .contLocation{
+            width: 90% !important;
+        }
+    }
+}
+@media screen and (max-width: 990px) {
+    .artEduPub{
+        width: auto !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* SECTION LOCATION */
+    .artLocation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1.5rem 1rem;
+    }
+    .artEduPub{
+        width: auto !important;
+    }
+    .listContactUs{
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 0 1rem;
+    }
+
+    /* ARTICLE LOCATION */
+    .artLocation{
+        gap: .5rem !important;
+    }
+        .contLocation{
+            width: 95% !important;
+        }
+            .textLocation{
+                padding: 0;
+            }
+
+.sectGobF{
+    gap: 3rem !important;
+    padding: 2rem !important;
+}
+    .listGobF{
+        justify-content: unset !important;
+        gap: 3.5rem !important;
+    }
+
+}
+@media screen and (max-width: 425px) {
+    
+}
+@media screen and (max-width: 375px) {
+    /* MENÚ HEADER GOB - VERDE */
+    .mainGobH{
+        padding: .5rem 1rem;
+    }
+    /* HEADER EDU - SEP */
+    .eduGobH{
+        padding: .75rem 1rem .75rem .5rem;
+    }
+        .artEduPub{
+            width: 17rem !important;
+        }
+        .imgEP{
+            width: 19rem !important;
+        }
+
+    /* MENU HEADER CECYT 3 */
+    .imgMenuBarC3H{
+        right: 1rem;
+    }
+}
+@media screen and (max-width: 769px) {
+    .artRadioIPN{
+        padding: 1rem 1rem !important;
+        gap: 1.25rem !important;
+    }
+}

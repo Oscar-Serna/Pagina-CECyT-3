@@ -1,0 +1,128 @@
+    .imgSectSaes{
+        width: 100%;
+        height: 22.5rem;
+        background: url(../img/Views/SAES/saes.jpg);
+        background-position: bottom left;
+    }
+
+    .contentSaes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+        padding: 2rem 2rem 0 2rem;
+    }
+
+        .cardSaes:hover{
+            transform: scale(.95);
+        }
+        .cardSaes:active{
+            transform: scale(.89);
+        }
+        .cardSaes{
+            width: 15rem;
+            height: 12.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 7.5px;
+            background-color: gray;
+            overflow: hidden;
+            font-family: 'Rubik', sans-serif;
+            cursor: pointer;
+            transition: 350ms ease;
+            user-select: none;
+        }
+
+            .cardSaesInt:hover{
+                background-color: rgba(1, 80, 170, 0.85);
+            }
+            .cardSaesInt{
+                background: url(../img/logoC3.png) no-repeat;
+                background-size: 70%;
+                background-position: center;
+                background-color: #0151aa;
+                box-shadow: 0 0 10px #0151aa;
+                transition: 200ms ease;
+            }
+                .cardSaesInt > .contentCardSaes{
+                    background-color: rgba(0, 30, 65, 0.5);
+                }
+
+            .cardSaesExt:hover{
+                background-color: rgba(104, 36, 68, 0.85);
+            }
+            .cardSaesExt{
+                background: url(../img/logo-ipn-b.webp) no-repeat;
+                background-size: 47.5%;
+                background-position: center;
+                background-color: #682444;
+                box-shadow: 0 0 10px #682444;
+                transition: 200ms ease;
+            }
+                .cardSaesExt > .contentCardSaes{
+                    background-color: rgba(65, 16, 39, 0.5);
+                }
+
+            .contentCardSaes{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                /* backdrop-filter: blur(1px); */
+                color: #fff;
+            }
+                .titleCardSaes{
+                    font-size: 34px;
+                }
+                .subtitleCardSaes{
+                    font-size: 18px;
+                }
+
+/* IMAGEN HERO RESPONSIVE */
+@media screen and (max-width: 900px) {
+    .imgSectSaes{
+        height: 20rem;
+        background-position: bottom left -2.5rem;
+    }
+    @media screen and (max-width: 700px) {
+        .imgSectSaes{
+            height: 15rem;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        .imgSectSaes{
+            background-position: bottom left -3.5rem;
+        }
+    }
+    @media screen and (max-width: 515px) {
+        .imgSectSaes{
+            height: 12rem;
+            background-position: bottom left -4.5rem;
+        }
+    }
+    @media screen and (max-width: 490px) {
+        .imgSectSaes{
+            background-position: bottom left -10.5rem;
+        }
+    }
+    @media screen and (max-width: 395px) {
+        .imgSectSaes{
+            background-position: bottom left -14rem;
+        }
+    }
+    @media screen and (max-width: 345px) {
+        .imgSectSaes{
+            background-position: bottom left -15rem;
+        }
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .contentSaes{
+        gap: 2rem 5rem;
+    }
+}

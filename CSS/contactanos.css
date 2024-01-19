@@ -1,0 +1,139 @@
+.contactUs{
+    position: fixed;
+    width: 0;
+    height: 0;
+    bottom: 6rem;
+    right: 1.5rem;
+    z-index: 2500;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+    .contImgContactUs{
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        right: 0;
+        background-color: #682444;
+        padding: .5rem;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.75);
+        cursor: pointer;
+    }
+        .imgContactUs{
+            width: 75%;
+            height: 75%;
+            animation-name: message;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            filter: drop-shadow(0 2px rgba(255, 255, 255, 0.25));
+        }
+
+        @keyframes message {
+            0%{
+                transform: scale(.925);
+            }
+
+            100%{
+                transform: scale(1);
+            }
+        }
+
+
+    .contentCU-I{
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        right: -20rem;
+        transition: 350ms ease;
+    }
+    .contentCU-A{
+        visibility: visible;
+        right: 0vw;
+        z-index: 1;
+        right: 0;
+        transition: 500ms ease;
+    }
+
+    .contentContactUs{
+        position: absolute; bottom: 4.5rem;
+        width: 15.5rem;
+        border-radius: 5px;
+        padding: 1rem;
+        background-color: #682444;
+        box-shadow: 0 0 5px rgba(255, 255, 255, .5);
+    }
+    .contentContactUs > .titleCU{
+        text-align: center;
+        padding: 0;
+        padding-bottom: 1rem;
+        font-size: 18px;
+    }
+        .formContactUs{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+            .titleCU{
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+            .inputCU:focus{
+                border-bottom: 2px solid rgba(255, 255, 255, .25);
+            }
+            .inputCU{
+                border: none;
+                outline: rgba(0, 0, 0, 0);
+                border-bottom: 2px solid rgba(255, 255, 255, 1);
+                color: #fff;
+                font-weight: bold;
+                text-transform: uppercase;
+                background-color: rgba(0, 0, 0, 0);
+                margin: .5rem 0 1rem;
+                padding-bottom: .25rem;
+                transition: 200ms ease;
+            }
+            .inputCU::placeholder{
+                color: rgba(255, 255, 255, .25);
+            }
+            .textareaCU:focus{
+                background-color: rgba(255, 255, 255, .2);
+            }
+            .textareaCU{
+                border: none;
+                background-color: rgba(255, 255, 255, .05);
+                border-radius: 5px;
+                color: #fff;
+                resize: none;
+                font-size: 16px;
+                /* font-weight: bold; */
+                margin-top: .5rem;
+                transition: 350ms ease;
+            }
+
+            .btnCU:hover{
+                background-color: rgba(255, 255, 255, .2);
+            }
+            .btnCU{
+                position: relative;
+                width: 50%;
+                height: 1.8rem;
+                background-color: rgba(255, 255, 255, .1);
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 14px;
+                /* font-family: 'Righteous', cursive; */
+                /* letter-spacing: 1px; */
+                border: none;
+                border-radius: 5px;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 1rem;
+                cursor: pointer;
+                transition: 350ms ease;
+            }

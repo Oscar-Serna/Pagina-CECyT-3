@@ -1,0 +1,144 @@
+
+.contentModalWindow{
+    width: 75vw;
+    height: auto;
+    max-width: 19rem;
+    max-height: 75vh;
+    border-radius: 8.5px;
+    background-color: rgba(104, 36, 68, 1);
+    padding: 1rem 2rem 1.5rem 2rem;
+    box-shadow: 0 0 10px #b18097;
+    backdrop-filter: blur(5px);
+    font-family: 'Rubik', sans-serif;
+    overflow-y: scroll;
+    -webkit-backdrop-filter: blur(5px);
+}
+
+    .navListModal{
+        display: flex;
+        justify-content: center;
+        font-family: 'Rubik', sans-serif;
+    }
+        .listModal{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-direction: column;
+            list-style: none;
+        }
+            .subtitleModal{
+                text-align: center;
+                font-weight: lighter;
+                text-transform: uppercase;
+                /* color: #fff !important; */
+                text-shadow: 0 0 2.5px #fff;
+            }
+            .itemListModal:hover{
+                background-color: rgba(255, 255, 255, 0.2);
+                box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            }
+            .itemListModal:active{
+                transform: scale(.97);
+            }
+            .itemListModal{
+                background-color: rgba(255, 255, 255, 0.3);
+                padding: .75rem 2rem;
+                border-radius: 5px;
+                box-shadow: 0 0 2.5px rgba(255, 255, 255, 0);
+                transition: 350ms ease;
+            }
+                .textItemModal{
+                    color: #fff;
+                }
+
+
+
+.contentModalWindow::-webkit-scrollbar{
+    width: 7.5px;
+    background-color: rgb(128, 56, 89);
+    border-radius: 0 8.5px 8.5px 0;
+}
+.contentModalWindow::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+}
+.contentModalWindow::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 255, 255, 0.8);
+}
+.contentModalWindow::-webkit-scrollbar-thumb:active{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+
+/* SECCION ESTUDIANTES */
+.sectStudents-I{
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+.sectStudents-A{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10000;
+}
+
+.sectStudents{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: 400ms ease;
+}
+    .contentSectStudents{
+        width: 75vw;
+        height: auto;
+        max-width: 19rem;
+        max-height: 75vh;
+        border-radius: 8.5px;
+        background-color: rgba(104, 36, 68, 1);
+        padding: 1rem 1.75rem;
+        box-shadow: 0 0 10px #b18097;
+        backdrop-filter: blur(5px);
+        font-family: 'Rubik', sans-serif;
+        -webkit-backdrop-filter: blur(5px);
+    }
+        .navListStudents{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .titleListStudents{
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+            .listStudents{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1rem;
+                list-style: none;
+            }
+                .itemListStudents:hover{
+                    background-color: rgba(255, 255, 255, 0.2);
+                    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+                }
+                .itemListStudents:active{
+                    transform: scale(.97);
+                }
+                .itemListStudents{
+                    padding: .5rem 1rem;
+                    background-color: rgba(255, 255, 255, .35);
+                    border-radius: 5px;
+                    transition: 350ms ease;
+
+                }
+                    .itemListStudents > p{
+
+                    }

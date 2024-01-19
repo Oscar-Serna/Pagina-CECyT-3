@@ -1,0 +1,175 @@
+.sectionGestion {
+    font-family: 'Rubik', sans-serif;
+}
+    .presentationGestion {
+        background-color: #682444;
+        background: url(../img/Views/Gestion-de-calidad/2021-03-20.jpg);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+        .contentPresentationG{
+            display: flex;
+            justify-content: center;
+            gap: 7.5rem;
+            backdrop-filter: brightness(.35);
+            padding: 3rem 1.5rem;
+            color: #fff;
+            flex-wrap: wrap;
+        }
+        .contLeftContentPG {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1.5rem;
+            /* text-align: center; */
+        }
+            .contLeftContentPG > h2 {
+                
+            }
+
+            .contIndividualInfo {
+                display: flex;
+                justify-content: center;
+                /* align-items: center; */
+                flex-direction: column;
+            }
+                .contIndividualInfo > h4 {
+
+                }
+
+                .contIndividualInfo > p {
+                    
+                }
+
+        .contRightContentPG {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+            .contRightContentPG > h2 {
+                font-size: 23px;
+                text-transform: uppercase;
+            }
+            .contInfoRightCPG {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+                padding: .5rem 0;
+            }
+                .contInfoRightCPG > h3 {
+                    font-size: 20px;
+                }
+                .contInfoRightCPG > p {
+                    width: 30rem;
+                    /* background-color: bisque; */
+                }
+
+    .infoCardGestion {
+        padding: 2rem;
+    }
+        .contCardsGestion {
+            display: flex;
+            justify-content: center;
+            /* align-items: flex-start; */
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+            .cardGestion:hover{
+                background-color: #501b34;
+                transform: scale(1.015);
+            }
+            .cardGestion {
+                width: 20rem;
+                box-shadow: 0 0 10px #682444;
+                padding: 1.5rem 1.5rem;
+                border-radius: 10px;
+                background-color: #682444;
+                color: #fff;
+                transition: 350ms ease;
+                cursor: default;
+            }
+                .cardGestion > h3 {
+                    padding-bottom: 1rem;
+                    text-align: center;
+                }
+                .cardGestion > p {
+
+                }
+
+                .listCardGestion{
+                    list-style: none;
+                }
+                    .itemListCardG{
+
+                    }
+
+
+@media screen and (max-width: 1231px) {
+    .contentPresentationG{
+        gap: 3rem;
+    }
+
+    @media screen and (max-width: 1159px) {
+        .presentationGestion{
+            background-size: 175%;
+        }
+
+        @media screen and (max-width: 967px) {
+            .presentationGestion{
+                background-size: 200%;
+            }
+        }
+        @media screen and (max-width: 823px) {
+            .presentationGestion{
+                background-size: 250%;
+            }
+        }
+        @media screen and (max-width: 663px) {
+            .presentationGestion{
+                background-size: 300%;
+                background-position: -15rem center;
+            }
+        }
+        @media screen and (max-width: 571px) {
+            .presentationGestion{
+                background-size: 350%;
+            }
+        }
+        @media screen and (max-width: 467px) {
+            .presentationGestion{
+                background-size: 450%;
+            }
+        }
+        @media screen and (max-width: 367px) {
+            .presentationGestion{
+                background-size: 550%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 854px) {
+        .infoCardGestion{
+            padding: 1rem 2rem;
+        }
+            .contCardsGestion{
+                gap: 1.5rem;
+            }
+    }
+
+    @media screen and (max-width: 532px){
+        .contentPresentationG{
+            padding: 1.5rem 1.5rem;
+        }
+        .contInfoRightCPG > p {
+            width: auto;
+        }
+    }
+}
